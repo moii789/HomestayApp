@@ -1,0 +1,6 @@
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\bin\Debug\HomestayAppDB.dacpac
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\bin\Debug\HomestayAppDB.dll
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\bin\Debug\HomestayAppDB.pdb
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\obj\Debug\HomestayAppDB.sqlprojAssemblyReference.cache
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\obj\Debug\HomestayAppDB.dll
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\obj\Debug\HomestayAppDB.pdb
