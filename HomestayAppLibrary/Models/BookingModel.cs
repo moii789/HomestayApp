@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HomestayAppLibrary.Models
 {
-    class BookingModel
+    public class BookingModel
     {
         public int Id { get; set; }
 

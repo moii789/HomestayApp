@@ -7,9 +7,7 @@ using System.Text;
 
 namespace HomestayAppLibrary.Data
 {
-    
-
-    class SqlData
+    public class SqlData : ISqlData
     {
         private readonly IDataAccess _db;
 

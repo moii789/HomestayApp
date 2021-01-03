@@ -1,10 +1,10 @@
 ﻿CREATE PROCEDURE [dbo].[spBookings_GetBooking]
-	@id int
+	@Id int
 AS
 BEGIN
 	SET NOCOUNT ON;
 	SELECT TOP 1 g.firstName, g.lastName, b.arrivalDate, b.departureDate,
-	h.name AS homestay, ht.Title as homestayType, l.locationName, ho.firstName as hostFirstName, 
+	h.name AS homestay, ht.title as homestayType, l.locationName, ho.firstName as hostFirstName, 
 	ho.lastName as hostLastName, b.totalCost
 	FROM Booking b
 	INNER JOIN Homestays h
@@ -17,5 +17,5 @@ BEGIN
 	ON h.hostId = ho.Id
 	INNER JOIN Guests g
 	On b.guestId = g.Id
-	WHERE b.Id = @id;
+	WHERE b.Id = @Id;
 END

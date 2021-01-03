@@ -6,7 +6,7 @@ AS
 BEGIN 
 	SET NOCOUNT ON;
 
-	SELECT h.name, ht.Title, ht.Description, ht.Price, ho.firstName, ho.lastName, l.locationName
+	SELECT h.name, ht.title, ht.description, ht.Price, ho.firstName, ho.lastName, l.locationName
 	FROM Homestays h
 	INNER JOIN HomestayType ht
 	ON h.homestayTypeId = ht.Id
