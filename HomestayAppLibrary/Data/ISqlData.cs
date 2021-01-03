@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace HomestayAppLibrary.Data
 {
-    interface ISqlData
+    public interface ISqlData
     {
         void bookGuest(string firstName, string lastName, string email, DateTime arrivalDate, DateTime departureDate, string homestayName);
         List<DisplayedResultsModel> getAvailableHomestays(DateTime arrivalDate, DateTime departureDate, string location);

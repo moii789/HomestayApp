@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using HomestayApp.HomestayAppLibrary.Data;
+using HomestayAppLibrary.Data;
+using HomestayAppLibrary.Databases;
 
 namespace HomestayApp.Web
 {
@@ -26,6 +22,7 @@ namespace HomestayApp.Web
         {
             services.AddRazorPages();
             services.AddTransient<ISqlData, SqlData>(); //want everyone to have a connection to the database so transient not singleton
+            services.AddTransient<IDataAccess, SqlDataAccess>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

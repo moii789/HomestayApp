@@ -2,7 +2,7 @@
 	@firstName char,
 	@lastName char,
 	@email char,
-	@phonenumber char
+	@phoneNumber char
 AS
 BEGIN
 	SET NOCOUNT ON;

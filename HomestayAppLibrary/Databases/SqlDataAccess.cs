@@ -47,7 +47,8 @@ namespace HomestayAppLibrary.Databases
 
             CommandType commandType = CommandType.Text;
 
-            if (options.isStoredProcedure != null && options.isStoredProcedure == true)
+            if (options.isStoredProcedure != null
+                && options.isStoredProcedure == true)
             {
                 commandType = CommandType.StoredProcedure;
             }
