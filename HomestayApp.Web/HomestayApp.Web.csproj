@@ -5,11 +5,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\homestaySearch.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
 	  <ProjectReference Include="..\HomestayAppLibrary\HomestayAppLibrary.csproj" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
     <PackageReference Include="NETStandard.Library" Version="2.0.3" />
 	  
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\homestaySearch.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\homestaySearch.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\homestaySearch.cshtml" />
   </ItemGroup>
 
 </Project>

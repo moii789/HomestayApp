@@ -1,0 +1,34 @@
+﻿@page
+@model HomestayApp.Web.Pages.BookRoomModel
+@{
+}
+
+
+<h1> Book Homestay</h1>
+<form method="post">
+    <div>
+        <label asp-for="@Model.arrivalDate">Arrival Date</label>
+        <input asp-for="@Model.arrivalDate" required />
+
+        <label asp-for="@Model.departureDate">Departure Date</label>
+        <input asp-for="@Model.departureDate" required />
+
+        <label asp-for="@Model.name">Homestay Name</label>
+        <input asp-for="@Model.name" required />
+
+        <label asp-for="@Model.firstName">First Name</label>
+        <input asp-for="@Model.firstName" required />
+
+        <label asp-for="@Model.lastName">Last Name</label>
+        <input asp-for="@Model.lastName" required />
+
+        <label asp-for="@Model.email">Email</label>
+        <input asp-for="@Model.email" required />
+
+        <label asp-for="@Model.email">Phone Number</label>
+        <input asp-for="@Model.email" />
+
+        <!--parse post request date and name--->
+    </div>
+    <button type="submit" class="btn btn-primary">Book</button>
+</form>

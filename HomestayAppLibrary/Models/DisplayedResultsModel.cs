@@ -9,15 +9,15 @@ namespace HomestayAppLibrary.Models
         public int id { get; set; }
         public string name { get; set; }
 
-        public string homestayType { get; set; }
+        public string title { get; set; }
 
-        public string homestayTypeDescription { get; set; }
+        public string description { get; set; }
 
         public Decimal price { get; set; }
 
-        public string firstNameHost { get; set; }
+        public string firstName { get; set; }
 
-        public string lastNameHost { get; set; }
+        public string lastName { get; set; }
 
         //add picture stuff later
     }
