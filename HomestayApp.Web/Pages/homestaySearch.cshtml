@@ -1,0 +1,19 @@
+﻿@page
+@model HomestayApp.Web.Pages.homestaySearchModel
+@{
+
+    ViewData["Title"] = "Homestay Search";
+
+    <h1> Search Homestays</h1>
+
+    <form method="post">
+        <input type="text" id="arrivalDate" name="Arrival Date" />
+        <input type="text" id="departureDate" name="Departure Date" />
+        <datalist id="locations">
+            <option value="Kathmandu" />
+            <option value="Pokhara" />
+            <option value="Nawalparasi" />
+        </datalist>
+        <button type ="submit" class = "btn btn-primary">Search</button>
+    </form>
+}

@@ -1,12 +1,12 @@
 ﻿CREATE PROCEDURE [dbo].[sp_GetAvailableHomestays]
 	@arrivalDate date,
 	@departureDate date,
-	@location char
+	@location varchar(250)
 AS
 BEGIN 
 	SET NOCOUNT ON;
 
-	SELECT h.name, ht.title, ht.description, ht.Price, ho.firstName, ho.lastName, l.locationName
+	SELECT h.name, ht.title, ht.description, ht.price, ho.firstName, ho.lastName
 	FROM Homestays h
 	INNER JOIN HomestayType ht
 	ON h.homestayTypeId = ht.Id

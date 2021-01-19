@@ -19,18 +19,20 @@ namespace HomestayAppLibrary.Data
         }
 
         public List<DisplayedResultsModel> getAvailableHomestays(DateTime arrivalDate, DateTime departureDate, String location)
+
         {
-            var x = _db.LoadData<DisplayedResultsModel, dynamic>("dbo.spResults_GetAvailableHomestays",
+           
+            var x = _db.LoadData<DisplayedResultsModel, dynamic>("dbo.sp_GetAvailableHomestays",
                                                          new { arrivalDate, departureDate, location },
                                                          connectionStringName,
                                                         true);
             return x;
         }
 
-        public void bookGuest(String firstName, string lastName, string email, DateTime arrivalDate, DateTime departureDate, string homestayName)
+        public void bookGuest(String firstName, string lastName, string email, string phoneNumber, DateTime arrivalDate, DateTime departureDate, string homestayName)
         {
             GuestModel guest = _db.LoadData<GuestModel, dynamic>("dbo.spBookings_GetGuest",
-                                                         new { firstName, lastName, email },
+                                                         new { firstName, lastName, email, phoneNumber },
                                                          connectionStringName,
                                                         true).First();
 

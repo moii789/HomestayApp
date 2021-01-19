@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,19 +7,12 @@ using HomestayAppLibrary.Data;
 using HomestayAppLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
 
 namespace HomestayApp.Web.Pages
 {
-    public class IndexModel : PageModel
+    public class homestaySearchModel : PageModel
     {
-
         private readonly ISqlData _db;
-
-        public IndexModel(ISqlData db)
-        {
-            _db = db;
-        }
 
         [DataType(DataType.Date)]
         [BindProperty(SupportsGet = true)]
@@ -37,19 +30,21 @@ namespace HomestayApp.Web.Pages
         public bool SearchEnabled { get; set; } = false;
         public List<DisplayedResultsModel> AvailableHomestays { get; set; }
 
+        public homestaySearchModel(ISqlData db)
+        {
+            _db = db;
+        }
         public void OnGet()
         {
             if (SearchEnabled)
             {
-                
                 AvailableHomestays = _db.getAvailableHomestays(ArrivalDate, DepartureDate, location);
-                
             }
         }
 
         public IActionResult OnPost()
         {
-            return RedirectToPage(new { SearchEnabled = true, ArrivalDate = ArrivalDate.ToString("yyyy-MM-dd"), DepartureDate = DepartureDate.ToString("yyyy-MM-dd"), location = location.ToString() });
+            return RedirectToPage(new { SearchEnabled = true, ArrivalDate = ArrivalDate, DepartureDate = DepartureDate, location= location });
         }
     }
 }
