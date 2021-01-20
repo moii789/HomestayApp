@@ -39,7 +39,8 @@ namespace HomestayAppLibrary.Data
             HomestayModel homestay = _db.LoadData<HomestayModel, dynamic>("dbo.spBookings_GetHomestay",
                                                          new { homestayName },
                                                          connectionStringName,
-                                                        true).First();
+                                                        true).FirstOrDefault();
+            Console.Write(homestay);
 
             TimeSpan totalStay = departureDate.Date.Subtract(arrivalDate.Date);
 

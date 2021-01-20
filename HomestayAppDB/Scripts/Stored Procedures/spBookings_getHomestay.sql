@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spBookings_GetHomestay]
-	@homestayName char
+	@homestayName varchar(250)
 AS
 BEGIN
 	SET NOCOUNT ON;
