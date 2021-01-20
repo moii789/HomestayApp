@@ -1,8 +1,8 @@
 ﻿CREATE PROCEDURE [dbo].[spBookings_GetGuest]
-	@firstName char,
-	@lastName char,
-	@email char,
-	@phoneNumber char
+	@firstName varchar(250),
+	@lastName varchar(250),
+	@email varchar(250),
+	@phoneNumber varchar(250)
 AS
 BEGIN
 	SET NOCOUNT ON;
