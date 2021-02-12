@@ -4,11 +4,12 @@
 	@arrivalDate date,
 	@departureDate date,
 	@price int
+
 AS
 BEGIN
 	SET NOCOUNT ON;
 
-	INSERT INTO Booking(guestId, homestayId, arrivalDate, departureDate, totalCost)
-	VALUES(@guestId, @homestayId, @arrivalDate, @departureDate, @price);
+	INSERT INTO Booking(guestId, homestayId, arrivalDate, departureDate, totalCost, checkedIn)
+	VALUES(@guestId, @homestayId, @arrivalDate, @departureDate, @price, 0);
 
 END

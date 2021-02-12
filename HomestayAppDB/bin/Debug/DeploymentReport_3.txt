@@ -1,0 +1,23 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column arrivalDate in table [dbo].[Booking] is currently  DATETIME2 (7) NOT NULL but is being changed to 
+         DATE NOT NULL. Data loss could occur.
+       The type for column departureDate in table [dbo].[Booking] is currently  DATETIME2 (7) NOT NULL but is being changed to 
+         DATE NOT NULL. Data loss could occur.
+
+** User actions
+     Alter
+       [dbo].[Booking] (Table)
+       [dbo].[Homestays] (Table)
+
+** Supporting actions
+
+The type for column arrivalDate in table [dbo].[Booking] is currently  DATETIME2 (7) NOT NULL but is being changed to  DATE NOT NULL. Data loss could occur.
+The type for column departureDate in table [dbo].[Booking] is currently  DATETIME2 (7) NOT NULL but is being changed to  DATE NOT NULL. Data loss could occur.
+

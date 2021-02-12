@@ -18,5 +18,7 @@ namespace HomestayAppLibrary.Models
 
         public decimal price { get; set; }
 
+        public bool checkedIn { get; set; }
+
     }
 }

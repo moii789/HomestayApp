@@ -49,3 +49,4 @@ C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayApp.Web\obj\Debug\ne
 C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayApp.Web\obj\Debug\netcoreapp3.1\Razor\Pages\BookRoom.cshtml.g.cs
 C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayApp.Web\obj\Debug\netcoreapp3.1\Razor\Pages\Explore.cshtml.g.cs
 C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayApp.Web\obj\Debug\netcoreapp3.1\Razor\Pages\Thankyou.cshtml.g.cs
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayApp.Web\obj\Debug\netcoreapp3.1\Razor\Pages\Results.cshtml.g.cs

@@ -30,7 +30,8 @@ BEGIN
 		ON h.hostId = ho.Id
 		INNER JOIN Location l
 		ON h.locationId = l.Id
-		WHERE h.Id NOT IN 
+		WHERE l.locationName = @location
+		AND h.Id NOT IN 
 		(SELECT b.homestayId FROM Booking b
 		WHERE ((@arrivalDate >= b.arrivalDate AND @arrivalDate <= b.departureDate)
 		OR (@arrivalDate <= b.arrivalDate AND @departureDate >= b.arrivalDate))

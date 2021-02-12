@@ -1,0 +1,16 @@
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\bin\Debug\HomestayAppDB.dacpac
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\bin\Debug\HomestayAppDB.dll
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\bin\Debug\HomestayAppDB.pdb
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\obj\Debug\HomestayAppDB.sqlprojAssemblyReference.cache
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\obj\Debug\HomestayAppDB.dll
+C:\Users\mahim\source\repos\HomestayApp\HomestayAppDB\obj\Debug\HomestayAppDB.pdb
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\bin\Debug\HomestayAppDB.dacpac
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\bin\Debug\HomestayAppDB.dll
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\bin\Debug\HomestayAppDB.pdb
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\obj\Debug\HomestayAppDB.dll
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\obj\Debug\HomestayAppDB.pdb
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\obj\Debug\HomestayAppDB.sqlprojAssemblyReference.cache
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\obj\Debug\Model.xml
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\obj\Debug\refactor.xml
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\obj\Debug\postdeploy.sql
+C:\Users\mahim\source\repos\HomestayApp\HomestayApp\HomestayAppDB\obj\Debug\predeploy.sql

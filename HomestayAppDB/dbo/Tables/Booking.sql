@@ -6,6 +6,7 @@
     [arrivalDate] DATE NOT NULL, 
     [departureDate] DATE NOT NULL, 
     [totalCost] MONEY NOT NULL, 
+    [checkedIn] BIT NOT NULL DEFAULT 0, 
     CONSTRAINT [FK_Booking_ToGuests] FOREIGN KEY (guestId) REFERENCES Guests(Id), 
     CONSTRAINT [FK_Booking_ToHomestays] FOREIGN KEY (homestayId) REFERENCES Homestays(Id)
 
