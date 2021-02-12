@@ -1,4 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[spBookings_GetBooking]
+	@firstName varchar(250),
+	@lastName varchar(250),
 	@Id int
 AS
 BEGIN
@@ -17,5 +19,7 @@ BEGIN
 	ON h.hostId = ho.Id
 	INNER JOIN Guests g
 	On b.guestId = g.Id
-	WHERE b.Id = @Id;
+	WHERE b.Id = @Id
+	AND g.firstName = @firstName
+	AND g.lastName = @lastName;
 END

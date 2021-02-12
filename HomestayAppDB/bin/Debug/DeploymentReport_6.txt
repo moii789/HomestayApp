@@ -1,0 +1,27 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Booking].[checkedIn] is being dropped, data loss could occur.
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Booking] (Default Constraint)
+     Alter
+       [dbo].[Booking] (Table)
+     Create
+       [dbo].[spBookings_GetBooking] (Procedure)
+       [dbo].[spBookings_getGuest] (Procedure)
+       [dbo].[spBookings_getHomestay] (Procedure)
+       [dbo].[spBookings_GetHomestayType] (Procedure)
+
+** Supporting actions
+     Refresh
+       [dbo].[sp_getAvailableHomestays] (Procedure)
+
+The column [dbo].[Booking].[checkedIn] is being dropped, data loss could occur.
+

@@ -1,0 +1,82 @@
+ <div class="row justify-content-center h-50" id="explore-button-container">
+        <a href="/Explore" class="btn btn-secondary btn-larg" id="explore-button" role="button">Explore</a>
+    </div>
+
+    <div class="row justify-content-center" id="search-conditions">
+        <form method="post">
+            <div class="row">
+                <div class="col">
+                    <label asp-for="@Model.ArrivalDate"><b>Arrival Date</b></label>
+                    <input class='form-control' type='date' asp-for="@Model.ArrivalDate" />
+                </div>
+
+                <div class="col">
+                    <label asp-for="@Model.DepartureDate"><b>Departure Date</b></label>
+                    <input class='form-control' type='date' asp-for="@Model.DepartureDate" />
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="@Model.location"><b>Location</b></label>
+                        <select class="form-control" id="locations" asp-for="@Model.location">
+                            <option>--Select--</option>
+                            <option>Kathmandu</option> value= />
+                            <option>Pokhara</option>
+                            <option>Bharatpur</option>
+                            <option>Lumbini</option>
+                            <option>Dhunibeshi</option>
+                            <option>Village of Langtang</option>
+                            <option>Jomsom</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col justify-content-center">
+                    <button type="submit" class="btn btn-secondary btn-larg" id="search-button">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+<!---
+      <div class="table table-responsive">
+
+        @if (Model.AvailableHomestays?.Count > 0)
+        {
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th> Name</th>
+                        <th> Type</th>
+                        <th> Price</th>
+                        <th>Host Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var hs in Model.AvailableHomestays)
+                    {
+                        <tr>
+                            <td>@hs.name</td>
+                            <td>
+                                @hs.title<br />
+                                @hs.description
+                            </td>
+                            <td>@hs.price</td>
+                            <td>@hs.firstName @hs.lastName </td>
+
+                            
+                            <td>
+                                <a asp-page="/BookRoom" asp-route-arrivalDate="@Model.ArrivalDate.ToString("yyyy-MM-dd")"
+                                   asp-route-departureDate="@Model.DepartureDate.ToString("yyyy-MM-dd")" asp-route-name="@hs.name">Book Homestay</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        @:</div>
+    }
+    -->

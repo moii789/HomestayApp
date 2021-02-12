@@ -2,6 +2,7 @@
 using HomestayAppLibrary.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -21,7 +22,7 @@ namespace HomestayAppLibrary.Data
         public List<DisplayedResultsModel> getAvailableHomestays(DateTime arrivalDate, DateTime departureDate, String location)
 
         {
-           
+
             var x = _db.LoadData<DisplayedResultsModel, dynamic>("dbo.sp_GetAvailableHomestays",
                                                          new { arrivalDate, departureDate, location },
                                                          connectionStringName,
@@ -62,9 +63,10 @@ namespace HomestayAppLibrary.Data
                         true);
         }
 
-        public List<BookingModel> searchBookings(int bookingId)
+        public List<WPFResultsModel> searchBookings(string firstName, string lastName, int Id)
+
         {
-            return _db.LoadData<BookingModel, dynamic>("dbo.spBookings_GetBooking", new { bookingId }, connectionStringName, true);
+            return _db.LoadData<WPFResultsModel, dynamic>("dbo.spBookings_GetBooking", new { firstName, lastName, Id }, connectionStringName, true);
         }
     }
 }
