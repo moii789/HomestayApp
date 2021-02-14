@@ -6,7 +6,7 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 	SELECT TOP 1 g.firstName, g.lastName, b.arrivalDate, b.departureDate,
-	h.name AS homestay, ht.title as homestayType, l.locationName, ho.firstName as hostFirstName, 
+	h.name AS homestayName, ht.title as homestayTypeTitle, l.locationName, ho.firstName as hostFirstName, 
 	ho.lastName as hostLastName, b.totalCost
 	FROM Booking b
 	INNER JOIN Homestays h

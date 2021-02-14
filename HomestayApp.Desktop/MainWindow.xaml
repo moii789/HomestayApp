@@ -40,12 +40,12 @@
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Margin="5"><Bold>Arrival Date:</Bold></TextBlock>
-                            <TextBlock Margin="5" Text="{Binding arrivalDate}"/>
+                            <TextBlock Margin="5" Text="{Binding arrivalDate, StringFormat='{}{0:MM/dd/yyyy}'}"/>
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Margin="5"><Bold>Departure Date:</Bold></TextBlock>
-                            <TextBlock Margin="5" Text="{Binding departureDate}"/>
+                            <TextBlock Margin="5" Text="{Binding departureDate, StringFormat='{}{0:MM/dd/yyyy}'}"/>
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal">
@@ -53,7 +53,7 @@
                             <TextBlock Margin ="5" Text="{Binding homestayName}"/>
                             <TextBlock Margin="5"><Bold>Homestay Type:</Bold></TextBlock>
                             <TextBlock Margin="5" Text="{Binding homestayTypeTitle}"/>
-                            <TextBlock Margin="5"><Bold>HomeStay Location:</Bold></TextBlock>
+                            <TextBlock Margin="5"><Bold>Homestay Location:</Bold></TextBlock>
                             <TextBlock Margin="5" Text="{Binding locationName}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
@@ -64,7 +64,7 @@
 
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Margin="5"><Bold>Total Cost:</Bold></TextBlock>
-                            <TextBlock Margin ="5" Text="{Binding totalCost}"/>
+                            <TextBlock Margin ="5" Text="{Binding totalCost, StringFormat='{}{0:c}'}"/>
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal">
