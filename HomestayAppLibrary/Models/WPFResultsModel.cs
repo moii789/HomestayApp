@@ -28,6 +28,8 @@ namespace HomestayAppLibrary.Models
 
         public decimal totalCost { get; set; }
 
+        public int bookingId { get; set; }
+
 
     }
 }

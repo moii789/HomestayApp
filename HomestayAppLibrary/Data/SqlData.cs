@@ -68,5 +68,10 @@ namespace HomestayAppLibrary.Data
         {
             return _db.LoadData<WPFResultsModel, dynamic>("dbo.spBookings_GetBooking", new { firstName, lastName, Id }, connectionStringName, true);
         }
+
+        public void CheckInGuest(int id)
+        {
+            _db.SaveData<BookingModel, dynamic>("dbo.spBookings_CheckInGuest", new { id }, connectionStringName, true);
+        }
     }
 }

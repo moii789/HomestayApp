@@ -1,0 +1,46 @@
+﻿<Window x:Class="HomestayApp.Desktop.CheckIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomestayApp.Desktop"
+        mc:Ignorable="d"  FontSize="24"
+        Title="CheckIn" Height="350" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <TextBlock Margin="5"><Bold>Name:</Bold></TextBlock>
+            <TextBlock Margin ="5" x:Name="firstNameText"/>
+            <TextBlock Margin="5" x:Name="lastNameText"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="2">
+                <TextBlock Margin="5"><Bold>Homestay:</Bold></TextBlock>
+                <TextBlock Margin ="5" x:Name="homestayName"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="3">
+                <TextBlock Margin="5"><Bold>Homestay Location:</Bold></TextBlock>
+                <TextBlock Margin="5" x:Name="homestayLocation"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="4">
+                <Button Margin="5" Padding="10" Click="ConfirmCheckIn_Click">Confirm Check In</Button>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Window>
