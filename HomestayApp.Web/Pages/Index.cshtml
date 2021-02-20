@@ -3,70 +3,44 @@
 @{
 }
 
-    <button>Explore</button>
+<div class="bg-image"></div>
 
-<h1> Search Homestays</h1>
+<div class="bg-text">
+        <form method="post">
+            <div class="row justify-content-center" id="search-conditions">
+                <div class="col">
+                    <label asp-for="@Model.ArrivalDate"><b>Arrival Date</b></label>
+                    <input class="form-control" type="date" asp-for="@Model.ArrivalDate" />
+                </div>
 
-<form method="post">
+                <div class="col">
+                    <label asp-for="@Model.DepartureDate"><b>Departure Date</b></label>
+                    <input class="form-control" type="date" asp-for="@Model.DepartureDate" />
+                </div>
 
-    <div>
-        <label asp-for="@Model.ArrivalDate">Arrival Date</label>
-        <input asp-for="@Model.ArrivalDate" />
-
-        <label asp-for="@Model.DepartureDate">Departure Date</label>
-        <input asp-for="@Model.DepartureDate" />
-
-       
-        <label asp-for="@Model.location">Location</label>
-        <input list="locations" asp-for="@Model.location" />
-        <datalist id="locations" asp-for="@Model.location">
-            <option value="--Select--" />
-            <option value="Kathmandu" />
-            <option value="Pokhara" />
-            <option value="Bharatpur" />
-            <option value="Lumbini" />
-            <option value="Dhunibeshi" />
-            <option value="Village of Langtang" />
-            <option value="Jomsom" />
-        </datalist>
-        <button type="submit" class="btn btn-primary">Search</button>
+                <div class="col">
+                    <div class="form-group">
+                        <label asp-for="@Model.location"><b>Location</b></label>
+                        <select class="form-control" id="locations" asp-for="@Model.location">
+                            <option>--Select--</option>
+                            <option>Kathmandu</option> value= />
+                            <option>Pokhara</option>
+                            <option>Bharatpur</option>
+                            <option>Lumbini</option>
+                            <option>Dhunibeshi</option>
+                            <option>Village of Langtang</option>
+                            <option>Jomsom</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-secondary btn-sm" id="search-button">Search</button>
+             </div>
+        </form>
     </div>
-</form>
+
+</div>
 
 
-@if (Model.AvailableHomestays?. Count  > 0){
-    <br>
-    <h2>Results</h2>
-
-    <table>
-        <tr>
-            <th> Name</th>
-            <th> Type</th>
-            <th> Price</th>
-            <th>Host Name</th>
-            <th></th>
-        </tr>
-
-        @foreach(var hs in Model.AvailableHomestays){
-            <tr>
-                <td>@hs.name</td>
-            <td>
-                    @hs.title<br />
-                    @hs.description
-            </td>
-            <td>@hs.price</td>
-            <td>@hs.firstName @hs.lastName </td>
-
-            <!--cshtml markup-->
-            <td>
-                <a asp-page="/BookRoom" asp-route-arrivalDate="@Model.ArrivalDate.ToString("yyyy-MM-dd")"
-                   asp-route-departureDate="@Model.DepartureDate.ToString("yyyy-MM-dd")" asp-route-name="@hs.name">Book Homestay</a>
-            </td>
-            </tr>
-        }
-    </table>
-   
-}
 
 
 
