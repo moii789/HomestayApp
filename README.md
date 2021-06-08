@@ -6,4 +6,4 @@ Management system for homestay accomodations in Nepal
 - Desktop App for management and owners of homestays (using WPF Core)
 - Backend database in SQL Server (connected by LINQ) 
 
-C#, Javascript, XAML
+C#, Javascript, XAML, HTML/CSS
